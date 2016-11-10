@@ -2,7 +2,7 @@ var mysql=require('mysql');
 var debug=require('debug')('blog:update');
 
 //创建数据连接
-var db=mysql.createConnection({
+exports.db=mysql.createConnection({
     host:'127.0.0.1',
     port:3306,
     database:'blogcrawler',
